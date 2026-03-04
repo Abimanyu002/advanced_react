@@ -1,17 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import Button from "./Button"
-
-function App() {
-  const [count, setCount] = useState(0)
-  console.log("hi")
+export default function App() {
   return (
-    <>
-    <Button text="testing"/>
-    </>
+    <main>
+      <Button variant="success">Log in with Google</Button>
+    </main>
   )
 }
-
-export default App
