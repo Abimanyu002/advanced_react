@@ -1,0 +1,72 @@
+h1{
+  display: flex;
+  background-color: rgb(52, 52, 88);
+  height: 60px;
+  align-items: center;
+  justify-content: left;
+  color:aliceblue;
+  margin:0%;
+  padding-left: 10px;
+  gap:20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 4px;
+}
+.list-body{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+  background-color: rgb(67, 70, 101);
+  margin-top: 40px;
+  border-radius: 8px;
+  padding: 35px;
+  align-items: center;
+  justify-content: center;
+}
+.add-button{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 127, 175);
+  border: 0;
+  border-radius: 2px;
+  height:30px;
+  color:rgb(75, 63, 88);
+  align-items: center;
+  font-size: 15px;
+}
+h2{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  background-color: rgb(124, 127, 175);
+  border:0px;
+  border-radius: 6px;
+  height:30px;
+  color:rgb(251, 251, 251);
+  align-items: center;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 0px;
+  gap: 6px;
+}
+input{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 127, 175);
+  border:0px;
+  border-radius: 2px;
+  height:30px;
+  color:rgb(251, 251, 251);
+  align-items: center;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 13px;
+}
+.list-body>h2>button{
+  display: flex;
+  background-color: rgb(124, 127, 175);
+  border :0px;
+  border-radius: 100px;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
+}

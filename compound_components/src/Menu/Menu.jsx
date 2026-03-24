@@ -2,6 +2,16 @@ import React from "react"
 import MenuButton from "./MenuButton"
 import MenuDropdown from "./MenuDropdown"
 
+/**
+ * Challenge:
+ * Part 1:
+ * 1. Create new context here in the Menu component. Make sure
+ *    to export it from this file as well.
+ * 2. Wrap the `div` below with the Context Provider
+ * 3. Give the Provider a value of the boolean `false` (represents
+ *    the hardcoded `open` state for now - we'll fix this very soon.)
+ */
+const drop=React.createContext() 
 export default function Menu({ children }) {
     const [open, setOpen] = React.useState(true)
 
@@ -9,25 +19,19 @@ export default function Menu({ children }) {
         setOpen(prevOpen => !prevOpen)
     }
     
-    /**
-     * Challenge:
-     * Now that MenuButton and MenuDropdown are receiving
-     * `open` and `toggle`, accept the necessary props in
-     * those components and refactor them to use those props
-     * to make the menu work again!
-     * 
-     * Hint: in MenuDropdown, you'll need to use conditional
-     * rendering to either display the div OR display `null`
-     */
+
 
     return (
-        <div className="menu">
-            {React.Children.map(children, (child) => {
-                return React.cloneElement(child, {
-                    open,
-                    toggle
-                })
-            })}
-        </div>
+        <drop.Provider value={open} > 
+            <div className="menu">
+                {React.Children.map(children, (child) => {
+                    return React.cloneElement(child, {
+                        open,
+                        toggle
+                    })
+                })}
+            </div>
+        </drop.Provider>  
     )
 }
+export {drop}
