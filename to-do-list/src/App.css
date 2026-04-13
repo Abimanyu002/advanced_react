@@ -19,7 +19,7 @@ h1{
   margin-top: 40px;
   border-radius: 8px;
   padding: 35px;
-  align-items: center;
+  align-items:baseline;
   justify-content: center;
 }
 .add-button{
@@ -33,22 +33,24 @@ h1{
   align-items: center;
   font-size: 15px;
 }
-h2{
+.list-name-element{
   display: flex;
   width: auto;
   justify-content: center;
+  align-items: center;
   background-color: rgb(124, 127, 175);
   border:0px;
   border-radius: 6px;
   height:30px;
   color:rgb(251, 251, 251);
-  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
   padding-left: 15px;
-  padding-right: 0px;
+  padding-right: 10px;
   gap: 6px;
+
 }
-input{
+.list-input{
   display: flex;
   justify-content: center;
   background-color: rgb(124, 127, 175);
@@ -61,7 +63,7 @@ input{
   padding-left: 10px;
   margin-bottom: 13px;
 }
-.list-body>h2>button{
+.list-body>.list>h2>button{
   display: flex;
   background-color: rgb(124, 127, 175);
   border :0px;
@@ -69,4 +71,80 @@ input{
   color: aliceblue;
   justify-content: space-between;
   align-items: center;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+
+   
+}
+.list-items{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none;
+  background-color: rgb(50, 30, 75);
+  border-radius: 5px;
+  
+}
+.list-items>div{
+  display: flex;
+  background-color: rgb(50, 30, 75);
+  color: aliceblue;
+
+}
+.list-item-input{
+  field-sizing: content;
+  color: aliceblue;
+  border-radius: 2px;
+  margin-bottom: 2px;
+  background-color: rgb(50, 30, 75);
+  width: 100%;
+  min-width: 80px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.list-item-input[type=text]:focus{
+  border: none;
+  outline: none; 
+}
+.checker{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.list-name-input{
+  field-sizing: content;
+  background-color: rgb(124, 127, 175);
+  border:0px;
+  border-radius: 2px;
+  height:15px;
+  width:100%;
+  color:rgb(251, 251, 251);
+  font-size: 15px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.list-name-input[type=text]:focus{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(124, 127, 175);
+  border:none;
+  outline: none; 
+  border-radius: 2px;
+  height:15px;
+  width:100%;
+  color:rgb(251, 251, 251);
+  align-items: center;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.delete-button{
+  color:rgb(168, 79, 79);
 }
